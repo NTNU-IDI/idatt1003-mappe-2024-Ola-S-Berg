@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
+    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java).">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +34,16 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2oQfTVWV6JMGDUOkrWTTb6OMBqa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -50,6 +53,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   }
@@ -85,7 +91,7 @@
       <updated>1730806728939</updated>
       <workItem from="1730806730575" duration="49000" />
       <workItem from="1731337209211" duration="829000" />
-      <workItem from="1731338056741" duration="3528000" />
+      <workItem from="1731338056741" duration="3944000" />
     </task>
     <task id="LOCAL−00001" summary="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.">
       <option name="closed" value="true" />
@@ -101,7 +107,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1731339564391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java).">
+      <option name="closed" value="true" />
+      <created>1731341648330</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1731341648330</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +134,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen." />
     <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java" />
+    <MESSAGE value="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java)." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
