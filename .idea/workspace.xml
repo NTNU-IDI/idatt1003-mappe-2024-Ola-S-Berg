@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" afterDir="false" />
+    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -82,7 +85,7 @@
       <updated>1730806728939</updated>
       <workItem from="1730806730575" duration="49000" />
       <workItem from="1731337209211" duration="829000" />
-      <workItem from="1731338056741" duration="1465000" />
+      <workItem from="1731338056741" duration="3528000" />
     </task>
     <task id="LOCAL−00001" summary="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.">
       <option name="closed" value="true" />
@@ -91,15 +94,34 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1731339198577</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java">
+      <option name="closed" value="true" />
+      <created>1731339564391</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1731339564391</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen." />
+    <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
