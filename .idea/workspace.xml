@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java).">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Application.java" afterDir="false" />
+    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +93,7 @@
       <updated>1730806728939</updated>
       <workItem from="1730806730575" duration="49000" />
       <workItem from="1731337209211" duration="829000" />
-      <workItem from="1731338056741" duration="3944000" />
+      <workItem from="1731338056741" duration="7884000" />
     </task>
     <task id="LOCAL−00001" summary="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.">
       <option name="closed" value="true" />
@@ -114,7 +116,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1731341648330</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java.">
+      <option name="closed" value="true" />
+      <created>1731342419888</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1731342419888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +144,8 @@
     <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen." />
     <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java" />
     <MESSAGE value="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java)." />
+    <MESSAGE value="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,18 +6,26 @@ import java.util.*;
 //Klasse "Grocery" har ansvar for å behandle informasjon om varetypene i kjøleskapet.
 public class Grocery {
 
-  private String name, unit;  //Oppretter informasjon "name" og "unit" som datatype String.
-  private double price; //Oppretter informasjon "price" som datatype double grunnet desimaltall.
-  private int quantity; //Oppretter informasjon "quantity" som datatype int.
-  private LocalDate expiryDate; //Oppretter informasjon "expiryDate" som datatype LocalDate.
+  private final String name, unit;  //Oppretter informasjon "name" og "unit" som datatype String. String brukes her grunnet at "navn" og "unit" er tekststrenger i koden.
+  private final double price; //Oppretter informasjon "price" som datatype double grunnet bruk av desimaltall.
+  private double quantity; //Oppretter informasjon "quantity" som datatype double grunnet bruk av desimaltall.
+  private final LocalDate expiryDate; //Oppretter informasjon "expiryDate" som datatype LocalDate for å implementere datoer i koden.
 
   //Konstruktør for å initialisere en grocery med de feltene den trenger.
-  public Grocery(String name, int quantity, String unit, double price, LocalDate expiryDate) {
+  //Lagt til for å kaste unntak under negative tester.
+  public Grocery(String name, double quantity, String unit, double price, LocalDate expiryDate) {
     this.name = name;
     this.unit = unit;
     this.price = price;
     this.quantity = quantity;
     this.expiryDate = expiryDate;
+
+    if (expiryDate == null) {
+      throw new IllegalArgumentException("Expiry date cannot be null");
+    }
+    if (quantity < 0) {
+      throw new IllegalArgumentException("Quantity cannot be negative");
+    }
   }
 
   //Aksessormetoder for å hente verdiene.
@@ -33,7 +41,7 @@ public class Grocery {
     return price;
   }
 
-  public int getQuantity() {
+  public double getQuantity() {
     return quantity;
   }
 
@@ -41,8 +49,9 @@ public class Grocery {
     return expiryDate;
   }
 
-  //Mutatormetoder for å endre verdier som kan være nødvendige å endre senere.
-  //Behandler også ugyldige data ved å kaste unntak.
+  //Mutatormetode for å endre verdi som kan være nødvendig å endre senere.
+  //Behandler også ugyldige data ved å kaste unntak under endring av verdier.
+  //Her er det bare nødvendig å ha "Quantity" som en mutatormetode da det er den verdien som vil endre seg når man lager mat.
   public void setQuantity(int quantity) {
     if (quantity < 0) {
       throw new IllegalArgumentException("Quantity cannot be negative");
@@ -50,25 +59,10 @@ public class Grocery {
     this.quantity = quantity;
   }
 
-  public void setPrice(double price) {
-    if (price < 0) {
-      throw new IllegalArgumentException("Price cannot be negative");
-    }
-    this.price = price;
-  }
-
-  public void setExpiryDate(LocalDate expiryDate) {
-    if (expiryDate == null) {
-      throw new IllegalArgumentException("Expiry date cannot be null");
-    }
-    this.expiryDate = expiryDate;
-  }
-
   //Tostring metode med override for å gjøre informasjon lesbar i Sysout.
-
   @Override
   public String toString() {
-    return name + ": " + quantity + " " + unit + ", pris: " + price + "kr, utløpsdato: "
+    return name + ": " + quantity + " " + unit + ", price: " + price + "kr, Expiry date: "
         + expiryDate;
   }
 }
