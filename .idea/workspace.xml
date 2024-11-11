@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java.">
+    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til flere kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -93,7 +94,7 @@
       <updated>1730806728939</updated>
       <workItem from="1730806730575" duration="49000" />
       <workItem from="1731337209211" duration="829000" />
-      <workItem from="1731338056741" duration="7884000" />
+      <workItem from="1731338056741" duration="10441000" />
     </task>
     <task id="LOCAL−00001" summary="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.">
       <option name="closed" value="true" />
@@ -123,7 +124,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1731342419888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til flere kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres.">
+      <option name="closed" value="true" />
+      <created>1731346419059</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1731346419059</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +153,8 @@
     <MESSAGE value="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.&#10;Opprettet GroceryTest.java" />
     <MESSAGE value="Endret på datatype til &quot;expiryDate&quot;.&#10;Lagt til mutatormetoder for å behandle ugyldig data.&#10;Opprettet toString metode.&#10;Opprettet testdata i UserUI.java (Tidligere GroceryTest.java)." />
     <MESSAGE value="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="0.7.0&#10;Opprettet application.java for å behandle applikasjonen og er en instans av UserUI.java." />
+    <MESSAGE value="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til flere kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til flere kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
