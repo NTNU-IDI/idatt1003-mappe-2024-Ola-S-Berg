@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til javadoc kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres." />
+    <list default="true" id="62237ef6-d1c5-46e3-abe5-4f51cc802b49" name="Changes" comment="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til javadoc kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,38 +45,26 @@
     "Application.Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ola/OneDrive - NTNU/idatt1003-mappe-2024-Ola-S-Berg",
+    "last_opened_file_path": "C:/Users/olasy/OneDrive - NTNU/idatt1003-mappe-2024-Ola-S-Berg",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -88,7 +78,10 @@
       <updated>1730806728939</updated>
       <workItem from="1730806730575" duration="49000" />
       <workItem from="1731337209211" duration="829000" />
-      <workItem from="1731338056741" duration="10751000" />
+      <workItem from="1731338056741" duration="11274000" />
+      <workItem from="1731487082734" duration="96000" />
+      <workItem from="1731487193159" duration="1575000" />
+      <workItem from="1731494140871" duration="814000" />
     </task>
     <task id="LOCAL−00001" summary="Opprettet Grocery.java klassen i testmiljøet og lagt til konstruktur, aksessormetoder og mutatormetode for klassen.">
       <option name="closed" value="true" />
@@ -132,7 +125,14 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1731348920805</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="1.0.0&#10;Fjernet mutatormetoder for pris og expiryDate da de ikke er nødvendige.&#10;Opprettet positive og negative tester for koden.&#10;Lagt til javadoc kommentarer i koden.&#10;Diverse forbedringer med CheckStyle med Google-regler.&#10;&#10;Kode er testet og fungerer innenfor kravene til del 1 av mappeoppgaven.&#10;Versjon 1.0.0 Lanseres.">
+      <option name="closed" value="true" />
+      <created>1731348970373</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1731348970373</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
