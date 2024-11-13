@@ -1,16 +1,16 @@
 package edu.ntnu.idi.bidata;
 
 /**
- * Klasse for å initialisere klassen "UserUI". Starter interaksjonen og testingen av klassen
+ * Class for initializing the class "UserUI". Starts the interaction and testing of the class
  * "Grocery".
  */
 public class Application {
 
   /**
-   * Metoden som er startpunktet til applikasjonen. Lager en instanse av "UserUI", starter systemer
-   * og starter testene.
+   * The method that is the start point for the application. Makes an instance of "UserUI", starts
+   * the systems and tests.
    *
-   * @param args Kommandolinje argumenter (ikke brukt).
+   * @param args Commandline arguments (not used).
    */
   public static void main(String[] args) {
     UserUI userUI = new UserUI();

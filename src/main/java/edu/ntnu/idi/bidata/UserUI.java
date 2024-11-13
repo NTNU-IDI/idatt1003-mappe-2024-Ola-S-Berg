@@ -3,25 +3,26 @@ package edu.ntnu.idi.bidata;
 import java.time.LocalDate;
 
 /**
- * Klasse "UserUI" har ansvar for å teste Grocery klassen og håndtere brukergrensesnitt.
+ * Class "UserUI" has the responsibility for testing the "Grocery" class and handle user interface.
  */
 public class UserUI {
 
   /**
-   * Initialiserer systemet med å printe "Initializing system" for å indikere at systemet starter.
+   * Initializes the system while printing "Initializing system" to indicate that the system is
+   * starting.
    */
   public void init() {
     System.out.println("Initializing system");
   }
 
   /**
-   * Starter testingen av "Grocery" klassen ved å lage instanser av hver ingrediens, vise dem og
-   * fange eventuelle feil i koden som ugyldig utløpsdato eller kvantitet.
+   * Starts the testing of the "Grocery" class by making instances of each ingredient, showing them
+   * and catching eventual errors in the code, like undefined expiry date or quantity.
    */
   public void start() {
     System.out.println("Testing class 'Grocery'");
 
-    //Positive tester:
+    //Positive tests:
     try {
       Grocery milk = new Grocery("Milk", 1, "l", 20, LocalDate.of(2024, 11, 20));
       Grocery butter = new Grocery("Butter", 500, "g", 50, LocalDate.of(2024, 11, 30));
@@ -34,10 +35,10 @@ public class UserUI {
       System.out.println("Errors: " + e.getMessage());
     }
 
-    //Negative tester:
+    //Negative tests:
     try {
       System.out.println("Negative test case:");
-      Grocery eggs = new Grocery("Eggs", 6, "stk", 40, null);
+      Grocery eggs = new Grocery("Eggs", 6, "pcs", 40, null);
       System.out.println(eggs);
       System.out.println("Error not caught");
 
@@ -47,7 +48,7 @@ public class UserUI {
 
     try {
       System.out.println("Positive test case:");
-      Grocery bacon = new Grocery("Bacon", -1, "stk", 80, LocalDate.of(2024, 11, 25));
+      Grocery bacon = new Grocery("Bacon", -1, "pcs", 80, LocalDate.of(2024, 11, 25));
       System.out.println(bacon);
       System.out.println("Error not caught");
 

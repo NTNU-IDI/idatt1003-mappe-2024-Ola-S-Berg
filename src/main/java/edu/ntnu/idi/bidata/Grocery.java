@@ -3,7 +3,8 @@ package edu.ntnu.idi.bidata;
 import java.time.LocalDate;
 
 /**
- * Klasse "Grocery" har ansvar for å behandle informasjon om varetypene i kjøleskapet.
+ * Class "Grocery" has responsibility for handling information about the grocery types in the
+ * fridge.
  */
 public class Grocery {
 
@@ -14,15 +15,18 @@ public class Grocery {
   private final LocalDate expiryDate;
 
   /**
-   * Konstruktør for å initialisere en ingrediens.
+   * Constructor for initializing an ingredient.
    *
-   * @param name       Navnet på ingrediensen, datatype "String" da navnet er en tekststreng.
-   * @param unit       Måleenheten til ingrediensen, datatype "String" da måleenhetene brukt er
-   *                   liter (l), gram (g) eller stykk (stk).
-   * @param price      Prisen til ingrediensen, datatype "double" da prisen kan være et flyttall.
-   * @param quantity   Mengden av ingrediensen, datatype "double" da mengden kan være et flyttall.
-   * @param expiryDate Utløpsdatoen til ingrediensen, "LocalDate" slik at vi kan bruke datoer.
-   * @throws IllegalArgumentException Dersom utløpsdatoen er null eller kvantitet er negativ.
+   * @param name       Name of the ingredient, datatype "String" because the name is a text string.
+   * @param unit       Unit of measurement for the ingredient, datatype "String" because the units
+   *                   of measurement used are: liters (l), grams (g) or pieces (pcs)
+   * @param price      Price of an ingredient, datatype "double" because the price can be a float
+   *                   value.
+   * @param quantity   Amount of an ingredient, datatype "double" because the amount can be a float
+   *                   value.
+   * @param expiryDate Expiry date for an ingredient, datatype "LocalDate" to give the expiry date
+   *                   an actual date value.
+   * @throws IllegalArgumentException If the expiry date is null or the quantity is negative.
    */
   public Grocery(String name, double quantity, String unit, double price, LocalDate expiryDate) {
     this.name = name;
@@ -40,7 +44,7 @@ public class Grocery {
   }
 
   /**
-   * Aksessormetoder for å hente verdiene
+   * Get-methods to get the values of the ingredients.
    */
   public String getName() {
     return name;
@@ -63,11 +67,11 @@ public class Grocery {
   }
 
   /**
-   * Setter kvantiteten til ingrediensen. Her er det bare nødvendig med mutatormetode for kvantitet
-   * da det er bare den informasjonen som vil endre seg ved brukerinput.
+   * Sets the quantity of an ingredient. It is only necessary with a set-method for quantity because
+   * it is the only information about an ingredient that will change through user input.
    *
-   * @param quantity Den nye kvantiteten til ingrediensen.
-   * @throws IllegalArgumentException Dersom kvantiteten er negativ.
+   * @param quantity The new quantity of the ingredient.
+   * @throws IllegalArgumentException If the quantity set is negative.
    */
   public void setQuantity(int quantity) {
     if (quantity < 0) {
@@ -77,10 +81,10 @@ public class Grocery {
   }
 
   /**
-   * Returnere en strengrepresentasjon av ingrediensen slik at den er lesbar i sysout.
+   * Returns a string representation of the ingredient so that it is readable in print.
    *
-   * @return En streng som beskriver ingrediensen i format: "Navn: kvantitet måleenhet, pris: pris
-   * kr, utløpsdato: utløpsdato".
+   * @return A string that describes the ingredient in format: "Name:, quantity, unit of
+   * measurement, price:, price, kr, expiry date:, expiry date.
    */
   @Override
   public String toString() {
