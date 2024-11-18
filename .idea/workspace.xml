@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist.">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Fridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Fridge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,7 +87,7 @@
       <workItem from="1731674069307" duration="26000" />
       <workItem from="1731674118287" duration="143000" />
       <workItem from="1731674398796" duration="1620000" />
-      <workItem from="1731932953832" duration="3104000" />
+      <workItem from="1731932953832" duration="7294000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -103,7 +103,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1731585907511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments.">
+      <option name="closed" value="true" />
+      <created>1731936409265</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1731936409265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Translated everything to english." />
     <MESSAGE value="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist." />
+    <MESSAGE value="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments." />
   </component>
 </project>

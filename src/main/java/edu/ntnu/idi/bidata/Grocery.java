@@ -15,17 +15,17 @@ public class Grocery {
   private final LocalDate expiryDate;
 
   /**
-   * Constructor for initializing an ingredient.
+   * Constructor for initializing a grocery.
    *
-   * @param name       Name of the ingredient, datatype "String" because the name is a text string.
-   * @param unit       Unit of measurement for the ingredient, datatype "String" because the units
-   *                   of measurement used are: liters (l), grams (g) or pieces (pcs)
-   * @param price      Price of an ingredient, datatype "double" because the price can be a float
+   * @param name       Name of the grocery, datatype "String" because the name is a text string.
+   * @param unit       Unit of measurement for the grocery, datatype "String" because the units of
+   *                   measurement used are: liters (l), grams (g) or pieces (pcs)
+   * @param price      Price of a grocery, datatype "double" because the price can be a float
    *                   value.
-   * @param quantity   Amount of an ingredient, datatype "double" because the amount can be a float
+   * @param quantity   Amount of a grocery, datatype "double" because the amount can be a float
    *                   value.
-   * @param expiryDate Expiry date for an ingredient, datatype "LocalDate" to give the expiry date
-   *                   an actual date value.
+   * @param expiryDate Expiry date for a grocery, datatype "LocalDate" to give the expiry date an
+   *                   actual date value.
    * @throws IllegalArgumentException If the expiry date is null or the quantity is negative.
    */
   public Grocery(String name, double quantity, String unit, double price, LocalDate expiryDate) {
@@ -44,7 +44,7 @@ public class Grocery {
   }
 
   /**
-   * Get-methods to get the values of the ingredients.
+   * Get-methods to get the values of the groceries.
    */
   public String getName() {
     return name;
@@ -67,10 +67,10 @@ public class Grocery {
   }
 
   /**
-   * Sets the quantity of an ingredient. It is only necessary with a set-method for quantity because
-   * it is the only information about an ingredient that will change through user input.
+   * Sets the quantity of a grocery. It is only necessary with a set-method for quantity because it
+   * is the only information about a grocery that will change through user input.
    *
-   * @param quantity The new quantity of the ingredient.
+   * @param quantity The new quantity of the grocery.
    * @throws IllegalArgumentException If the quantity set is negative.
    */
   public void setQuantity(int quantity) {
@@ -81,10 +81,10 @@ public class Grocery {
   }
 
   /**
-   * Returns a string representation of the ingredient so that it is readable in print.
+   * Returns a string representation of the grocery so that it is readable in print.
    *
-   * @return A string that describes the ingredient in format: "Name:, quantity, unit of
-   * measurement, price:, price, kr, expiry date:, expiry date.
+   * @return A string that describes the grocery in format: "Name:, quantity, unit of measurement,
+   * price:, price, kr, expiry date:, expiry date".
    */
   @Override
   public String toString() {
