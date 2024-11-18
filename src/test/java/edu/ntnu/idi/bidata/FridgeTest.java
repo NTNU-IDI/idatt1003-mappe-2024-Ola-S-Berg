@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 /**
- * Class for testing the "Fridge" class.
+ * Class for testing the "Fridge" class. Includes positive and negative tests for maximum coverage.
  */
 class FridgeTest {
 

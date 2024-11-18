@@ -7,17 +7,21 @@ import java.time.LocalDate;
  */
 public class UserUI {
 
+  private Fridge fridge;
+
   /**
    * Initializes the system while printing "Initializing system" to indicate that the system is
    * starting.
    */
   public void init() {
+    fridge = new Fridge();
     System.out.println("Initializing system");
   }
 
+
   /**
-   * Starts the testing of the "Grocery" class by making instances of each ingredient, showing them
-   * and catching eventual errors in the code, like undefined expiry date or quantity.
+   * Starts the testing of the "Grocery" class by making instances of each grocery, showing them and
+   * catching eventual errors in the code, like undefined expiry date or quantity.
    */
   public void start() {
     System.out.println("Testing class 'Grocery'");
