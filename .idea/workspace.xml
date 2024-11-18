@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments.">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.3&#10;Updated the method for searching for a grocery.&#10;Created a method for returning all groceries that has an expiry date before the indicated date.&#10;Created a method for returning a sorted list of the groceries.&#10;Created a tostring method to represent the groceries in the register.&#10;Added javadoc comments.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/FridgeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Fridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Fridge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Application.executor": "Run",
+    "JUnit.FridgeTest.executor": "Run",
     "JUnit.GroceryTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -87,7 +88,7 @@
       <workItem from="1731674069307" duration="26000" />
       <workItem from="1731674118287" duration="143000" />
       <workItem from="1731674398796" duration="1620000" />
-      <workItem from="1731932953832" duration="7294000" />
+      <workItem from="1731932953832" duration="16168000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -110,7 +111,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1731936409265</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="1.3&#10;Updated the method for searching for a grocery.&#10;Created a method for returning all groceries that has an expiry date before the indicated date.&#10;Created a method for returning a sorted list of the groceries.&#10;Created a tostring method to represent the groceries in the register.&#10;Added javadoc comments.">
+      <option name="closed" value="true" />
+      <created>1731940435752</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1731940435752</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +128,7 @@
     <MESSAGE value="Translated everything to english." />
     <MESSAGE value="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist." />
     <MESSAGE value="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments." />
+    <MESSAGE value="1.3&#10;Updated the method for searching for a grocery.&#10;Created a method for returning all groceries that has an expiry date before the indicated date.&#10;Created a method for returning a sorted list of the groceries.&#10;Created a tostring method to represent the groceries in the register.&#10;Added javadoc comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.3&#10;Updated the method for searching for a grocery.&#10;Created a method for returning all groceries that has an expiry date before the indicated date.&#10;Created a method for returning a sorted list of the groceries.&#10;Created a tostring method to represent the groceries in the register.&#10;Added javadoc comments." />
   </component>
 </project>

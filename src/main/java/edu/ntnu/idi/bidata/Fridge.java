@@ -30,11 +30,12 @@ public class Fridge {
    * @param grocery The grocery to add.
    */
   public void registerGrocery(Grocery grocery) {
-    if (groceries.containsKey(grocery.getName())) {
-      Grocery existingGrocery = groceries.get(grocery.getName());
+    String name = grocery.getName();
+    if (groceries.containsKey(name)) {
+      Grocery existingGrocery = groceries.get(name);
       existingGrocery.setQuantity((int) (grocery.getQuantity() + grocery.getQuantity()));
     } else {
-      groceries.put(grocery.getName(), grocery);
+      groceries.put(name, grocery);
     }
   }
 
