@@ -3,7 +3,7 @@ package edu.ntnu.idi.bidata;
 import java.time.LocalDate;
 
 /**
- * Class "UserUI" has the responsibility for testing the "Grocery" class and handle user interface.
+ * Class "UserUI" has the responsibility of testing the "Grocery" class and handle user interface.
  */
 public class UserUI {
 
