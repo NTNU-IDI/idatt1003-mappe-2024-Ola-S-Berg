@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" afterDir="false" />
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.7&#10;Created class &quot;CookBook&quot;.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2onKQVVy5OvzGJZMTDJpaB33gpn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,7 +148,7 @@
       <workItem from="1732274170964" duration="2572000" />
       <workItem from="1732616950896" duration="2744000" />
       <workItem from="1732642284231" duration="1256000" />
-      <workItem from="1732705225092" duration="8109000" />
+      <workItem from="1732705225092" duration="10059000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -196,7 +199,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1732711107288</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="1.7&#10;Created class &quot;CookBook&quot;.">
+      <option name="closed" value="true" />
+      <created>1732738506321</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1732738506321</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +220,7 @@
     <MESSAGE value="1.4&#10;Created &quot;FridgeTest&quot; class for testing the &quot;Fridge&quot; class." />
     <MESSAGE value="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions." />
     <MESSAGE value="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;." />
+    <MESSAGE value="1.7&#10;Created class &quot;CookBook&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.7&#10;Created class &quot;CookBook&quot;." />
   </component>
 </project>
