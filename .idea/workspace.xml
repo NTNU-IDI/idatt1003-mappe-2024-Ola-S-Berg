@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions.">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -145,7 +145,7 @@
       <workItem from="1732274170964" duration="2572000" />
       <workItem from="1732616950896" duration="2744000" />
       <workItem from="1732642284231" duration="1256000" />
-      <workItem from="1732705225092" duration="4579000" />
+      <workItem from="1732705225092" duration="8109000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -189,7 +189,14 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1732706936408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;.">
+      <option name="closed" value="true" />
+      <created>1732711107288</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1732711107288</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +209,7 @@
     <MESSAGE value="1.3&#10;Updated the method for searching for a grocery.&#10;Created a method for returning all groceries that has an expiry date before the indicated date.&#10;Created a method for returning a sorted list of the groceries.&#10;Created a tostring method to represent the groceries in the register.&#10;Added javadoc comments." />
     <MESSAGE value="1.4&#10;Created &quot;FridgeTest&quot; class for testing the &quot;Fridge&quot; class." />
     <MESSAGE value="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions." />
+    <MESSAGE value="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.6&#10;Added functional tests for class &quot;Fridge&quot; in class &quot;UserUI&quot;." />
   </component>
 </project>
