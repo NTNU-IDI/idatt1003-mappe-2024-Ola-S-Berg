@@ -25,7 +25,7 @@ class FridgeTest {
   }
 
   /**
-   * Tests adding a new grocery.
+   * Tests positive behaviour of adding a new grocery.
    */
   @Test
   void registerGroceryPositive1() {
@@ -35,7 +35,7 @@ class FridgeTest {
   }
 
   /**
-   * Tests registering a duplicate grocery by increasing its quantity.
+   * Tests positive behaviour of registering a duplicate grocery by increasing its quantity.
    */
   @Test
   void registerGroceryPositive2() {

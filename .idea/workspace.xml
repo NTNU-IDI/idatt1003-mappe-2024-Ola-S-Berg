@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/FridgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/FridgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     "Application.Application.executor": "Run",
     "JUnit.FridgeTest.executor": "Run",
     "JUnit.GroceryTest.executor": "Run",
+    "JUnit.GroceryTest.groceryConstructorTestPositive.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -67,6 +69,45 @@
       <recent name="edu.ntnu.idi.bidata" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.GroceryTest">
+    <configuration name="GroceryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Foodwaste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ntnu.idi.bidata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.ntnu.idi.bidata" />
+      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.GroceryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroceryTest.groceryConstructorTestPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Foodwaste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ntnu.idi.bidata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.ntnu.idi.bidata" />
+      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.GroceryTest" />
+      <option name="METHOD_NAME" value="groceryConstructorTestPositive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GroceryTest" />
+        <item itemvalue="JUnit.GroceryTest.groceryConstructorTestPositive" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -89,6 +130,10 @@
       <workItem from="1731674118287" duration="143000" />
       <workItem from="1731674398796" duration="1620000" />
       <workItem from="1731932953832" duration="16945000" />
+      <workItem from="1732274170964" duration="2572000" />
+      <workItem from="1732616950896" duration="2744000" />
+      <workItem from="1732642284231" duration="1256000" />
+      <workItem from="1732705225092" duration="1485000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
