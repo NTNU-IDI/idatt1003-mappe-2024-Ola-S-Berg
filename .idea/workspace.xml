@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.4&#10;Created &quot;FridgeTest&quot; class for testing the &quot;Fridge&quot; class.">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/FridgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/FridgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/GroceryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,20 @@
       <recent name="edu.ntnu.idi.bidata" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GroceryTest">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.Application" />
+      <module name="Foodwaste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ntnu.idi.bidata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroceryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Foodwaste" />
       <extension name="coverage">
@@ -103,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.GroceryTest" />
         <item itemvalue="JUnit.GroceryTest.groceryConstructorTestPositive" />
       </list>
@@ -133,7 +145,7 @@
       <workItem from="1732274170964" duration="2572000" />
       <workItem from="1732616950896" duration="2744000" />
       <workItem from="1732642284231" duration="1256000" />
-      <workItem from="1732705225092" duration="1485000" />
+      <workItem from="1732705225092" duration="4579000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -170,7 +182,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1731958739484</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions.">
+      <option name="closed" value="true" />
+      <created>1732706936408</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1732706936408</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +201,7 @@
     <MESSAGE value="1.2&#10;Rewrote the code from using an ArrayList to register a grocery, to using a HashMap.&#10;Added methods for removing a grocery.&#10;Added javadoc comments." />
     <MESSAGE value="1.3&#10;Updated the method for searching for a grocery.&#10;Created a method for returning all groceries that has an expiry date before the indicated date.&#10;Created a method for returning a sorted list of the groceries.&#10;Created a tostring method to represent the groceries in the register.&#10;Added javadoc comments." />
     <MESSAGE value="1.4&#10;Created &quot;FridgeTest&quot; class for testing the &quot;Fridge&quot; class." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.4&#10;Created &quot;FridgeTest&quot; class for testing the &quot;Fridge&quot; class." />
+    <MESSAGE value="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.5&#10;Moved tests for the class &quot;Grocery&quot; from class &quot;UserUI&quot; to their own class &quot;GroceryTest&quot;.&#10;Added additional tests for the &quot;Grocery&quot; class using assertions." />
   </component>
 </project>
