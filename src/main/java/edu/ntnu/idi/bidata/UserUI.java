@@ -22,8 +22,8 @@ public class UserUI {
   }
 
   /**
-   * Starts the application by populating the fridge with sample groceries and demonstrates some of
-   * the functionality of the "Fridge" class.
+   * Starts the application by populating the fridge with sample groceries and sample recipes to
+   * test the functionality of the classes.
    */
   public void start() {
     fridge.registerGrocery(new Grocery("Milk", 500, "ml", 20, LocalDate.of(2024, 12, 20)));
