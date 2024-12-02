@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/CookBookTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/RecipeTest.java" afterDir="false" />
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.9&#10;Added test classes for classes &quot;Recipe&quot; and &quot;Cookbook&quot;.&#10;Created positive and negative tests for methods.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <recent name="edu.ntnu.idi.bidata" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CookBookTest">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.Application" />
       <module name="Foodwaste" />
@@ -152,9 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.CookBookTest" />
         <item itemvalue="JUnit.RecipeTest" />
-        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.GroceryTest" />
         <item itemvalue="JUnit.GroceryTest.groceryConstructorTestPositive" />
       </list>
@@ -187,7 +184,7 @@
       <workItem from="1732642284231" duration="1256000" />
       <workItem from="1732705225092" duration="13458000" />
       <workItem from="1732994172963" duration="3066000" />
-      <workItem from="1733054006982" duration="10930000" />
+      <workItem from="1733054006982" duration="12891000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -273,7 +270,14 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1733059020428</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="1.9&#10;Added test classes for classes &quot;Recipe&quot; and &quot;Cookbook&quot;.&#10;Created positive and negative tests for methods.">
+      <option name="closed" value="true" />
+      <created>1733136438277</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1733136438277</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +307,7 @@
     <MESSAGE value="1.7.1&#10;Created constructor for class &quot;Recipe&quot;." />
     <MESSAGE value="1.7.5&#10;Added a method for adding a grocery as an ingredient to the recipe.&#10;Added getters.&#10;Added a to-string method (not final)." />
     <MESSAGE value="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method." />
+    <MESSAGE value="1.9&#10;Added test classes for classes &quot;Recipe&quot; and &quot;Cookbook&quot;.&#10;Created positive and negative tests for methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.9&#10;Added test classes for classes &quot;Recipe&quot; and &quot;Cookbook&quot;.&#10;Created positive and negative tests for methods." />
   </component>
 </project>
