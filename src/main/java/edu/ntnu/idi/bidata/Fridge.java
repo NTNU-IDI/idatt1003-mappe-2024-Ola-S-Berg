@@ -33,7 +33,7 @@ public class Fridge {
     String name = grocery.getName();
     if (groceries.containsKey(name)) {
       Grocery existingGrocery = groceries.get(name);
-      existingGrocery.setQuantity((int) (grocery.getQuantity() + grocery.getQuantity()));
+      existingGrocery.setQuantity(existingGrocery.getQuantity() + grocery.getQuantity());
     } else {
       groceries.put(name, grocery);
     }

@@ -73,7 +73,7 @@ public class Grocery {
    * @param quantity The new quantity of the grocery.
    * @throws IllegalArgumentException If the quantity set is negative.
    */
-  public void setQuantity(int quantity) {
+  public void setQuantity(double quantity) {
     if (quantity < 0) {
       throw new IllegalArgumentException("Quantity cannot be negative");
     }
