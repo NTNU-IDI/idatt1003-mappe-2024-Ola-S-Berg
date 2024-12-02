@@ -17,7 +17,7 @@ public class UserUI {
    */
   public void init() {
     fridge = new Fridge();
-    CookBook cookBook = new CookBook();
+    cookBook = new CookBook();
     System.out.println("Initializing system");
   }
 
@@ -34,11 +34,15 @@ public class UserUI {
 
     System.out.println(fridge);
 
-    Recipe pancakes = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 10, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe pancakes = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 10, 4,
+        pancakeNutrients);
     pancakes.addIngredient(new Grocery("Milk", 300, "ml", 20, LocalDate.of(2024, 12, 20)));
     pancakes.addIngredient(new Grocery("Flour", 200, "g", 5, LocalDate.of(2024, 12, 23)));
 
-    Recipe waffles = new Recipe("Waffles", "Crispy waffles", "Mix and cook", 15, 4);
+    Nutrients waffleNutrients = new Nutrients(500, 16, 15, 53);
+    Recipe waffles = new Recipe("Waffles", "Crispy waffles", "Mix and cook", 15, 4,
+        waffleNutrients);
     waffles.addIngredient(new Grocery("Milk", 200, "ml", 20, LocalDate.of(2024, 12, 20)));
     waffles.addIngredient(new Grocery("Flour", 100, "g", 5, LocalDate.of(2024, 12, 23)));
 
@@ -46,9 +50,13 @@ public class UserUI {
     cookBook.addRecipe(waffles);
 
     List<Recipe> possibleRecipes = cookBook.findAllPossibleRecipes(fridge);
-    System.out.println("Recipes you can make:");
-    for (Recipe recipe : possibleRecipes) {
-      System.out.println(recipe.getName());
+    System.out.println("Recipes you can make with your current fridge contents:");
+    if (possibleRecipes.isEmpty()) {
+      System.out.println("No recipes can be made with the available ingredients");
+    } else {
+      for (Recipe recipe : possibleRecipes) {
+        System.out.println(recipe.getName());
+      }
     }
   }
 }

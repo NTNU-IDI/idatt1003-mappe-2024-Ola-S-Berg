@@ -14,9 +14,20 @@ public class Recipe {
   private final Map<String, Grocery> ingredients;
   private final int time;
   private final int servings;
-  //private final String nutrients; Add macro nutrients into own class in the future.
+  private final Nutrients nutrients;
 
-  public Recipe(String name, String description, String procedure, int time, int servings) {
+  /**
+   * Class "Recipe" has responsibility for handling information about the recipes.
+   *
+   * @param name        The name of the recipe.
+   * @param description The description of the recipe.
+   * @param procedure   The procedure for making the recipe.
+   * @param time        The time it takes to make the recipe.
+   * @param servings    The amount of servings in the recipe.
+   * @param nutrients   The nutrients contained in the recipe.
+   */
+  public Recipe(String name, String description, String procedure, int time, int servings,
+      Nutrients nutrients) {
     if (servings <= 0) {
       throw new IllegalArgumentException("Servings must be greater than 0");
     }
@@ -27,7 +38,7 @@ public class Recipe {
     this.ingredients = new HashMap<>();
     this.time = time;
     this.servings = servings;
-    //this.nutrients = nutrients; Add macro nutrients into own class in the future.
+    this.nutrients = nutrients;
   }
 
   /**
@@ -68,6 +79,10 @@ public class Recipe {
 
   public int getServings() {
     return servings;
+  }
+
+  public Nutrients getNutrients() {
+    return nutrients;
   }
 
   @Override

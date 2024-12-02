@@ -14,11 +14,15 @@ class CookBookTest {
    * Creates sample recipes and adds them to the cookbook.
    */
   private void sampleRecipes() {
-    Recipe pancakes = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe pancakes = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4,
+        pancakeNutrients);
     pancakes.addIngredient(new Grocery("Milk", 300, "ml", 20, LocalDate.of(2024, 12, 15)));
     pancakes.addIngredient(new Grocery("flour", 200, "g", 5, LocalDate.of(2024, 12, 25)));
 
-    Recipe waffles = new Recipe("Waffles", "Crispy waffles", "Mix and bake", 20, 4);
+    Nutrients waffleNutrients = new Nutrients(500, 16, 15, 53);
+    Recipe waffles = new Recipe("Waffles", "Crispy waffles", "Mix and bake", 20, 4,
+        waffleNutrients);
     waffles.addIngredient(new Grocery("Milk", 500, "ml", 20, LocalDate.of(2024, 12, 15)));
     waffles.addIngredient(new Grocery("flour", 200, "g", 5, LocalDate.of(2024, 12, 25)));
 
@@ -31,7 +35,9 @@ class CookBookTest {
    */
   @Test
   void addRecipePositive() {
-    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4,
+        pancakeNutrients);
 
     cookBook.addRecipe(recipe);
 

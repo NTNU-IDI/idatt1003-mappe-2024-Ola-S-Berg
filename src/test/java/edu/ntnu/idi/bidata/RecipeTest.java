@@ -13,7 +13,9 @@ class RecipeTest {
    */
   @Test
   void createRecipePositive() {
-    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4,
+        pancakeNutrients);
 
     assertEquals("Pancakes", recipe.getName(), "Recipe name mismatch");
     assertEquals("Fluffy pancakes", recipe.getDescription(), "Recipe description mismatch");
@@ -27,8 +29,9 @@ class RecipeTest {
    */
   @Test
   void createRecipeNegative() {
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
     IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
-      new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 0);
+      new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 0, pancakeNutrients);
     });
     assertEquals("Servings must be greater than 0", exception.getMessage(),
         "Exception message mismatch");
@@ -39,7 +42,9 @@ class RecipeTest {
    */
   @Test
   void addIngredientPositive() {
-    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4,
+        pancakeNutrients);
     Grocery milk = new Grocery("Milk", 1, "l", 20, LocalDate.of(2024, 12, 15));
 
     recipe.addIngredient(milk);
@@ -55,7 +60,9 @@ class RecipeTest {
    */
   @Test
   void addIngredientNegative() {
-    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4,
+        pancakeNutrients);
 
     IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
       recipe.addIngredient(null);
@@ -69,7 +76,9 @@ class RecipeTest {
    */
   @Test
   void getIngredientsPositive() {
-    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4);
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe recipe = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 15, 4,
+        pancakeNutrients);
     Grocery milk = new Grocery("Milk", 1, "l", 20, LocalDate.of(2024, 12, 15));
     Grocery flour = new Grocery("Flour", 200, "g", 5, LocalDate.of(2024, 12, 25));
 
