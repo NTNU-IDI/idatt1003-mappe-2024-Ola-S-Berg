@@ -29,6 +29,9 @@ public class Nutrients {
     this.carbs = carbs;
   }
 
+  /**
+   * Get-methods to get information about the nutrients.
+   */
   public double getCalories() {
     return calories;
   }

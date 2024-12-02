@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="2.0&#10;Updated class &quot;Application&quot; and class &quot;UserUI&quot; to test some of the functionalities of the classes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Nutrients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/CookBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/CookBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/RecipeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/RecipeTest.java" afterDir="false" />
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="2.1.1&#10;Updated some javadoc text.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/NutrientsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Nutrients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Nutrients.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -49,6 +45,7 @@
     "JUnit.FridgeTest.executor": "Run",
     "JUnit.GroceryTest.executor": "Run",
     "JUnit.GroceryTest.groceryConstructorTestPositive.executor": "Run",
+    "JUnit.NutrientsTest.executor": "Run",
     "JUnit.RecipeTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -76,7 +73,7 @@
       <recent name="edu.ntnu.idi.bidata" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.NutrientsTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.Application" />
       <module name="Foodwaste" />
@@ -120,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroceryTest.groceryConstructorTestPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NutrientsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Foodwaste" />
       <extension name="coverage">
         <pattern>
@@ -129,9 +126,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.ntnu.idi.bidata" />
-      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.GroceryTest" />
-      <option name="METHOD_NAME" value="groceryConstructorTestPositive" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.NutrientsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NutrientsTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.RecipeTest" />
         <item itemvalue="JUnit.CookBookTest" />
         <item itemvalue="JUnit.GroceryTest" />
-        <item itemvalue="JUnit.GroceryTest.groceryConstructorTestPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +184,7 @@
       <workItem from="1732642284231" duration="1256000" />
       <workItem from="1732705225092" duration="13458000" />
       <workItem from="1732994172963" duration="3066000" />
-      <workItem from="1733054006982" duration="16199000" />
+      <workItem from="1733054006982" duration="16885000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -288,7 +284,21 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1733141718316</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="2.1.0&#10;Created class &quot;Nutrients&quot; and updated the other classes to use the class.">
+      <option name="closed" value="true" />
+      <created>1733145585625</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1733145585625</updated>
+    </task>
+    <task id="LOCAL−00016" summary="2.1.1&#10;Updated some javadoc text.">
+      <option name="closed" value="true" />
+      <created>1733145668989</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1733145668989</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +330,8 @@
     <MESSAGE value="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method." />
     <MESSAGE value="1.9&#10;Added test classes for classes &quot;Recipe&quot; and &quot;Cookbook&quot;.&#10;Created positive and negative tests for methods." />
     <MESSAGE value="2.0&#10;Updated class &quot;Application&quot; and class &quot;UserUI&quot; to test some of the functionalities of the classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0&#10;Updated class &quot;Application&quot; and class &quot;UserUI&quot; to test some of the functionalities of the classes." />
+    <MESSAGE value="2.1.0&#10;Created class &quot;Nutrients&quot; and updated the other classes to use the class." />
+    <MESSAGE value="2.1.1&#10;Updated some javadoc text." />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1.1&#10;Updated some javadoc text." />
   </component>
 </project>
