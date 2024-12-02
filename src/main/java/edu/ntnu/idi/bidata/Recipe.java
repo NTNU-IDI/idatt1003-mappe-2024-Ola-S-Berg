@@ -13,7 +13,7 @@ public class Recipe {
   private final String procedure;
   private final Map<String, Grocery> ingredients;
   private final int time;
-  private int servings;
+  private final int servings;
   //private final String nutrients; Add macro nutrients into own class in the future.
 
   public Recipe(String name, String description, String procedure, int time, int servings) {

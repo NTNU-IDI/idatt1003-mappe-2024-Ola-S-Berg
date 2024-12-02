@@ -76,6 +76,11 @@ public class CookBook {
     return allPossibleRecipes;
   }
 
+  /**
+   * Returns a string representation of all recipes in the cookbook.
+   *
+   * @return A string listing all recipes by name.
+   */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder("CookBook:");

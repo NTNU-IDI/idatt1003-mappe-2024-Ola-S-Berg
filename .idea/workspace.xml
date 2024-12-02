@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.7.5&#10;Added a method for adding a grocery as an ingredient to the recipe.&#10;Added getters.&#10;Added a to-string method (not final).">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/CookBookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/ntnu/idi/bidata/RecipeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,30 +41,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FridgeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GroceryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GroceryTest.groceryConstructorTestPositive.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ola/OneDrive - NTNU&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "JUnit.CookBookTest.executor": "Run",
+    "JUnit.FridgeTest.executor": "Run",
+    "JUnit.GroceryTest.executor": "Run",
+    "JUnit.GroceryTest.groceryConstructorTestPositive.executor": "Run",
+    "JUnit.RecipeTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ola/OneDrive - NTNU",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -70,7 +75,7 @@
       <recent name="edu.ntnu.idi.bidata" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.CookBookTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.Application" />
       <module name="Foodwaste" />
@@ -80,6 +85,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CookBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Foodwaste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ntnu.idi.bidata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.ntnu.idi.bidata" />
+      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.CookBookTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,8 +135,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecipeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Foodwaste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ntnu.idi.bidata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.ntnu.idi.bidata" />
+      <option name="MAIN_CLASS_NAME" value="edu.ntnu.idi.bidata.RecipeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CookBookTest" />
+        <item itemvalue="JUnit.RecipeTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.GroceryTest" />
         <item itemvalue="JUnit.GroceryTest.groceryConstructorTestPositive" />
@@ -150,7 +187,7 @@
       <workItem from="1732642284231" duration="1256000" />
       <workItem from="1732705225092" duration="13458000" />
       <workItem from="1732994172963" duration="3066000" />
-      <workItem from="1733054006982" duration="4785000" />
+      <workItem from="1733054006982" duration="10930000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -229,7 +266,14 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1732744001637</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method.">
+      <option name="closed" value="true" />
+      <created>1733059020428</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1733059020428</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +302,7 @@
     <MESSAGE value="1.7&#10;Created class &quot;CookBook&quot; and class &quot;Recipe&quot;." />
     <MESSAGE value="1.7.1&#10;Created constructor for class &quot;Recipe&quot;." />
     <MESSAGE value="1.7.5&#10;Added a method for adding a grocery as an ingredient to the recipe.&#10;Added getters.&#10;Added a to-string method (not final)." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.7.5&#10;Added a method for adding a grocery as an ingredient to the recipe.&#10;Added getters.&#10;Added a to-string method (not final)." />
+    <MESSAGE value="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method." />
+    <option name="LAST_COMMIT_MESSAGE" value="1.8&#10;Added methods in class &quot;CookBook&quot; for adding, retrieving and searching for recipes.&#10;Added toString method." />
   </component>
 </project>
