@@ -48,6 +48,31 @@ public class Nutrients {
     return carbs;
   }
 
+  /**
+   * Helper method for the "suggestRecipesByMacronutrient" method. Gets the nutrient value from a
+   * recipe based on focus.
+   *
+   * @param focus The macronutrient to focus on.
+   * @return The value of the macronutrient for the recipe.
+   */
+  public double getNutrientValue(String focus) {
+    switch (focus.toLowerCase()) {
+      case "carbs":
+        return this.getCarbs();
+      case "protein":
+        return this.getProtein();
+      case "fat":
+        return this.getFat();
+      default:
+        throw new IllegalArgumentException("Invalid macronutrient focus " + focus);
+    }
+  }
+
+  /**
+   * Returns a string representation of the macronutrients.
+   *
+   * @return A string representation of macronutrients.
+   */
   @Override
   public String toString() {
     return "Calories: " + calories + " kcal, Protein:" + protein + "g, Fat: " + fat + " g, Carbs: "

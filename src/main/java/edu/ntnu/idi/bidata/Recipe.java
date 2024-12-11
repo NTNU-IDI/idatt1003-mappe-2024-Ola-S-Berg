@@ -85,7 +85,11 @@ public class Recipe {
     return nutrients;
   }
 
-
+  /**
+   * Returns a string representation of a recipe containing all necessary information.
+   *
+   * @return A string representing a recipe.
+   */
   @Override
   public String toString() {
     return "Recipe: " + name +

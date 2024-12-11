@@ -17,7 +17,7 @@ public class UserUI {
 
   /**
    * Initializes the system while printing "Initializing system" to indicate that the system is
-   * starting. Creates a new fridge and a new cookbook with their contents.
+   * starting. Creates a new fridge and a new cookbook with their sample contents.
    */
   public void init() {
     System.out.println("Initializing system");
@@ -103,7 +103,8 @@ public class UserUI {
           break;
 
         case 9:
-
+          suggestRecipesByMacronutrient();
+          break;
         case 10:
           System.out.println("Exiting the program.");
           running = false;
@@ -262,6 +263,42 @@ public class UserUI {
       System.out.println("\nShopping list for " + recipeName + ":");
       missingIngredients.forEach(
           (ingredient, quantity) -> System.out.println(ingredient + ": " + quantity));
+    }
+  }
+
+  /**
+   * Suggests recipes based on a specific macronutrient focus.
+   */
+  private void suggestRecipesByMacronutrient() {
+    System.out.println("What type of meal do you want?");
+    System.out.println("1. Carbs");
+    System.out.println("2. Protein");
+    System.out.println("3. Fat");
+    System.out.println("Enter your choice: ");
+
+    int choice = Integer.parseInt(scanner.nextLine().trim());
+    String focus = "";
+
+    switch (choice) {
+      case 1:
+        focus = "carbs";
+        break;
+      case 2:
+        focus = "protein";
+        break;
+      case 3:
+        focus = "fat";
+        break;
+      default:
+        System.out.println("Invalid choice. Please pick a valid option.");
+        return;
+    }
+
+    List<Recipe> suggestions = cookBook.suggestRecipesByMacronutrient(focus);
+    System.out.println("\nSuggested recipes sorted by " + focus + ":");
+    for (Recipe recipe : suggestions) {
+      double nutrientValue = recipe.getNutrients().getNutrientValue(focus);
+      System.out.println(recipe.getName() + " - " + focus + ": " + nutrientValue + " g");
     }
   }
 }

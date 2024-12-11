@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
+import java.util.stream.*;
 
 /**
  * The "CookBook" class stores and manages the collection of recipes. Allows users to add, retrieve,
@@ -117,6 +118,21 @@ public class CookBook {
       }
     }
     return null;
+  }
+
+  /**
+   * Suggests recipes based on a specific macronutrient focus.
+   *
+   * @param focus The macronutrient to focus on.
+   * @return A list of recipes sorted by the selected macronutrient.
+   */
+  public List<Recipe> suggestRecipesByMacronutrient(String focus) {
+    return recipes.stream()
+        .sorted((r1, r2) -> Double.compare(
+            r2.getNutrients().getNutrientValue(focus),
+            r1.getNutrients().getNutrientValue(focus)
+        ))
+        .toList();
   }
 
   /**
