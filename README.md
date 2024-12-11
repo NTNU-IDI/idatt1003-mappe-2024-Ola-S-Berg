@@ -5,7 +5,7 @@ STUDENT ID = "Your ID"
 
 ## Project description
 
-[//]: Test
+Test
 
 ## Project structure
 
