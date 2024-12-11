@@ -88,7 +88,16 @@ public class Recipe {
 
   @Override
   public String toString() {
-    return "Recipe [name: " + name + ", description: " + description + ", procedure: " + procedure
-        + ", ingredients: " + ingredients + ", time: " + time + ", servings: " + servings + "]";
+    return "Recipe: " + name +
+        "\nDescription: " + description +
+        "\nProcedure: " + procedure +
+        "\nTime: " + time + " minutes" +
+        "\nServings: " + servings +
+        "\nNutrients: " +
+        "\n - Calories: " + nutrients.getCalories() +
+        "\n - Protein: " + nutrients.getProtein() + " g" +
+        "\n - Fat: " + nutrients.getFat() + " g" +
+        "\n - Carbs: " + nutrients.getCarbs() + " g" +
+        "\nIngredients: " + ingredients.values() + "\n";
   }
 }

@@ -63,7 +63,8 @@ public class UserUI {
     System.out.println("6. Add a new recipe");
     System.out.println("7. Find recipes possible to make with the groceries in your fridge");
     System.out.println("8. Generate shopping list for a recipe");
-    System.out.println("9. Exit");
+    System.out.println("9. Get suggested meals by nutrients");
+    System.out.println("10. Exit");
 
     boolean running = true;
     while (running) {
@@ -102,6 +103,8 @@ public class UserUI {
           break;
 
         case 9:
+
+        case 10:
           System.out.println("Exiting the program.");
           running = false;
           break;
