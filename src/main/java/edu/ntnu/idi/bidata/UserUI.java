@@ -16,13 +16,34 @@ public class UserUI {
 
   /**
    * Initializes the system while printing "Initializing system" to indicate that the system is
-   * starting.
+   * starting. Creates a new fridge and a new cookbook with their contents.
    */
   public void init() {
     System.out.println("Initializing system");
     this.fridge = new Fridge();
     this.cookBook = new CookBook();
     this.scanner = new Scanner(System.in);
+
+    fridge.registerGrocery(new Grocery("Milk", 1000, "ml", 20, LocalDate.of(2024, 12, 20)));
+    fridge.registerGrocery(new Grocery("Butter", 500, "g", 50, LocalDate.of(2024, 12, 30)));
+    fridge.registerGrocery(new Grocery("Eggs", 6, "pcs", 40, LocalDate.of(2024, 12, 22)));
+    fridge.registerGrocery(new Grocery("Bacon", 5, "pcs", 80, LocalDate.of(2024, 12, 25)));
+    fridge.registerGrocery(new Grocery("Flour", 500, "g", 30, LocalDate.of(2024, 12, 30)));
+
+    Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
+    Recipe pancakes = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 10, 4,
+        pancakeNutrients);
+    pancakes.addIngredient(new Grocery("Milk", 300, "ml", 20, LocalDate.of(2024, 12, 20)));
+    pancakes.addIngredient(new Grocery("Flour", 200, "g", 5, LocalDate.of(2024, 12, 23)));
+
+    Nutrients waffleNutrients = new Nutrients(500, 16, 15, 53);
+    Recipe waffles = new Recipe("Waffles", "Crispy waffles", "Mix and cook", 15, 4,
+        waffleNutrients);
+    waffles.addIngredient(new Grocery("Milk", 200, "ml", 20, LocalDate.of(2024, 12, 20)));
+    waffles.addIngredient(new Grocery("Flour", 100, "g", 5, LocalDate.of(2024, 12, 23)));
+
+    cookBook.addRecipe(pancakes);
+    cookBook.addRecipe(waffles);
   }
 
 
@@ -32,15 +53,16 @@ public class UserUI {
    */
   public void start() {
     System.out.println("\nWelcome to the Grocery and Recipe System! Choose an option:");
-    System.out.println("1. View all groceries currently in the fridge");
-    System.out.println("2. Register a new grocery");
-    System.out.println("3. View expired groceries");
-    System.out.println("4. Remove a grocery");
+    System.out.println("1. View fridge contents");
+    System.out.println("2. Register a new grocery to the fridge");
+    System.out.println("3. Remove a grocery from the fridge");
+    System.out.println("4. View expired groceries");
     System.out.println("\n");
     System.out.println("5. View recipes in the cookbook");
     System.out.println("6. Add a new recipe");
     System.out.println("7. Find recipes possible to make with the groceries in your fridge");
-    System.out.println("8. Exit");
+    System.out.println("8. Generate shopping list for a recipe");
+    System.out.println("9. Exit");
 
     boolean running = true;
     while (running) {
@@ -75,11 +97,16 @@ public class UserUI {
           break;
 
         case 8:
+          generateShoppingList();
+          break;
+
+        case 9:
           System.out.println("Exiting the program.");
           running = false;
           break;
+
         default:
-          System.out.println("Invalid option. Pick a valid option.");
+          System.out.println("Invalid option. Please pick a valid option.");
       }
     }
   }
@@ -111,6 +138,9 @@ public class UserUI {
     System.out.println("Grocery added successfully!");
   }
 
+  /**
+   * Method for removing a quantity of a grocery from the fridge.
+   */
   private void removeGrocery() {
     System.out.print("Enter grocery name: ");
     String name = scanner.nextLine();
@@ -124,6 +154,9 @@ public class UserUI {
     }
   }
 
+  /**
+   * Method for printing all the expired groceries in the fridge.
+   */
   private void viewExpiredGroceries() {
     System.out.println("Enter the date to check expired groceries (yyyy-mm-dd): ");
     LocalDate date = LocalDate.parse(scanner.nextLine());
@@ -135,10 +168,16 @@ public class UserUI {
     }
   }
 
+  /**
+   * Method for printing all recipes in the cookbook.
+   */
   private void viewRecipesInCookbook() {
     System.out.println(cookBook);
   }
 
+  /**
+   * Method for adding a new recipe to the cookbook.
+   */
   private void addRecipe() {
     System.out.print("Enter recipe name: ");
     String name = scanner.nextLine();
@@ -153,42 +192,56 @@ public class UserUI {
 
     Nutrients nutrients = new Nutrients(250, 10, 5, 35);
     Recipe recipe = new Recipe(name, description, procedure, time, servings, nutrients);
+    addIngredientsToRecipe(recipe);
     cookBook.addRecipe(recipe);
     System.out.println("Recipe added successfully!");
   }
 
+  /**
+   * Helper method for method "addRecipe". Prompts the user if they want to add a ingredients to the
+   * new recipe.
+   *
+   * @param recipe The recipe to add ingredients to.
+   */
+  private void addIngredientsToRecipe(Recipe recipe) {
+    boolean addingIngredients = true;
+    while (addingIngredients) {
+      System.out.print("Add ingredients to the recipe? (yes/no):");
+      String choice = scanner.nextLine();
+      if (choice.equalsIgnoreCase("yes")) {
+        System.out.print("Enter ingredient name: ");
+        String ingredientName = scanner.nextLine();
+        System.out.print("Enter ingredient quantity: ");
+        double quantity = Double.parseDouble(scanner.nextLine());
+        System.out.print("Enter ingredient unit (ml, g, pcs): ");
+        String unit = scanner.nextLine();
+        System.out.print("Enter expiry date (yyyy-mm-dd): ");
+        LocalDate expiryDate = LocalDate.parse(scanner.nextLine());
+
+        Grocery ingredient = new Grocery(ingredientName, quantity, unit, 0, expiryDate);
+        recipe.addIngredient(ingredient);
+
+        System.out.println("Ingredient added successfully!");
+      } else {
+        addingIngredients = false;
+        System.out.println("Finished adding ingredients.");
+      }
+    }
+  }
+
+  /**
+   * Finds the possible recipes to make with the ingredients in the fridge.
+   */
   private void possibleRecipes() {
     System.out.println("Finding recipes based on your fridge...");
     List<Recipe> recipes = cookBook.findAllPossibleRecipes(fridge);
     recipes.forEach(recipe -> System.out.println(recipe));
   }
+
+  /**
+   * Creates a shopping list for a chosen recipe (WIP).
+   */
+  private static void generateShoppingList() {
+    System.out.print("\nEnter the name of the recipe:");
+  }
 }
-/**
- * fridge.registerGrocery(new Grocery("Milk", 500, "ml", 20, LocalDate.of(2024, 12, 20)));
- * fridge.registerGrocery(new Grocery("Flour", 300, "g", 5, LocalDate.of(2024, 12, 23)));
- * fridge.registerGrocery(new Grocery("Butter", 500, "g", 50, LocalDate.of(2024, 12, 30)));
- * fridge.registerGrocery(new Grocery("Eggs", 6, "pcs", 40, LocalDate.of(2024, 12, 22)));
- * fridge.registerGrocery(new Grocery("Bacon", 5, "pcs", 80, LocalDate.of(2024, 12, 25)));
- * <p>
- * System.out.println(fridge);
- * <p>
- * Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50); Recipe pancakes = new
- * Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 10, 4, pancakeNutrients);
- * pancakes.addIngredient(new Grocery("Milk", 300, "ml", 20, LocalDate.of(2024, 12, 20)));
- * pancakes.addIngredient(new Grocery("Flour", 200, "g", 5, LocalDate.of(2024, 12, 23)));
- * <p>
- * Nutrients waffleNutrients = new Nutrients(500, 16, 15, 53); Recipe waffles = new
- * Recipe("Waffles", "Crispy waffles", "Mix and cook", 15, 4, waffleNutrients);
- * waffles.addIngredient(new Grocery("Milk", 200, "ml", 20, LocalDate.of(2024, 12, 20)));
- * waffles.addIngredient(new Grocery("Flour", 100, "g", 5, LocalDate.of(2024, 12, 23)));
- * <p>
- * cookBook.addRecipe(pancakes); cookBook.addRecipe(waffles);
- * <p>
- * System.out.println("\nCookbook contents:"); System.out.println(cookBook);
- * <p>
- * List<Recipe> possibleRecipes = cookBook.findAllPossibleRecipes(fridge);
- * System.out.println("\nRecipes you can make with your current fridge contents:"); if
- * (possibleRecipes.isEmpty()) { System.out.println("\nNo recipes can be made with the available
- * ingredients"); } else { for (Recipe recipe : possibleRecipes) {
- * System.out.println(recipe.getName()); } } } }
- */

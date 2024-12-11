@@ -19,7 +19,7 @@ public class Grocery {
    *
    * @param name       Name of the grocery, datatype "String" because the name is a text string.
    * @param unit       Unit of measurement for the grocery, datatype "String" because the units of
-   *                   measurement used are: liters (l), grams (g) or pieces (pcs)
+   *                   measurement used are: milliliters (ml), grams (g) or pieces (pcs)
    * @param price      Price of a grocery, datatype "double" because the price can be a float
    *                   value.
    * @param quantity   Amount of a grocery, datatype "double" because the amount can be a float
