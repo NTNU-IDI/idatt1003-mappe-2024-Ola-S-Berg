@@ -5,7 +5,7 @@ STUDENT ID = "Your ID"
 
 ## Project description
 
-[//]: # (TODO: Write a short description of your project/product here.)
+[//]: Test
 
 ## Project structure
 
