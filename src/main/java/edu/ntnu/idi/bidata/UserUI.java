@@ -1,6 +1,7 @@
 package edu.ntnu.idi.bidata;
 
 import java.sql.SQLOutput;
+import java.util.Map;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.util.List;
@@ -198,8 +199,7 @@ public class UserUI {
   }
 
   /**
-   * Helper method for method "addRecipe". Prompts the user if they want to add a ingredients to the
-   * new recipe.
+   * Helper method for method "addRecipe". Prompts the user to add ingredients to the new recipe.
    *
    * @param recipe The recipe to add ingredients to.
    */
@@ -239,9 +239,26 @@ public class UserUI {
   }
 
   /**
-   * Creates a shopping list for a chosen recipe (WIP).
+   * Method that creates a shopping list for a chosen recipe. Finds missing ingredients for the
+   * chosen recipe and prints a list containing missing ingredients.
    */
-  private static void generateShoppingList() {
-    System.out.print("\nEnter the name of the recipe:");
+  private void generateShoppingList() {
+    System.out.print("Enter the name of the recipe:");
+    String recipeName = scanner.nextLine().trim();
+
+    Recipe recipe = cookBook.findRecipeByName(recipeName);
+    if (recipe == null) {
+      System.out.println("Recipe not found...");
+      return;
+    }
+
+    Map<String, Double> missingIngredients = cookBook.getMissingIngredients(fridge);
+    if (missingIngredients.isEmpty()) {
+      System.out.println("You have all the ingredients for this recipe!");
+    } else {
+      System.out.println("\nShopping list for " + recipeName + ":");
+      missingIngredients.forEach(
+          (ingredient, quantity) -> System.out.println(ingredient + ": " + quantity));
+    }
   }
 }

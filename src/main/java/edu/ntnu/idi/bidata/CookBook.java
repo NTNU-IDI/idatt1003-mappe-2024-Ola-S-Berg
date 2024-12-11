@@ -1,6 +1,7 @@
 package edu.ntnu.idi.bidata;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 
@@ -74,6 +75,48 @@ public class CookBook {
       }
     }
     return allPossibleRecipes;
+  }
+
+  /**
+   * Gets the missing ingredients needed to make the recipe, based on available groceries in the
+   * fridge.
+   *
+   * @param fridge A map representing the available groceries in the fridge.
+   * @return A map of missing ingredients.
+   */
+  public Map<String, Double> getMissingIngredients(Fridge fridge) {
+    Map<String, Double> missingIngredients = new HashMap<>();
+
+    for (Recipe recipe : recipes) {
+      Map<String, Grocery> recipeIngredients = recipe.getIngredients();
+
+      for (Map.Entry<String, Grocery> entry : recipeIngredients.entrySet()) {
+        double ingredientQuantity = entry.getValue().getQuantity();
+        Grocery fridgeGrocery = fridge.searchGrocery(entry.getKey());
+        double fridgeQuantity = fridgeGrocery != null ? fridgeGrocery.getQuantity() : 0.0;
+
+        if (fridgeQuantity < ingredientQuantity) {
+          missingIngredients.put(entry.getKey(), ingredientQuantity - fridgeQuantity);
+        }
+      }
+    }
+    return missingIngredients;
+  }
+
+  /**
+   * Method for finding a recipe by name. Functions as a helper method for method
+   * "generateShoppingList" in class "UserUI".
+   *
+   * @param name The name of the recipe.
+   * @return The recipe. Returns null if it did not find the recipe.
+   */
+  public Recipe findRecipeByName(String name) {
+    for (Recipe recipe : recipes) {
+      if (recipe.getName().equalsIgnoreCase(name)) {
+        return recipe;
+      }
+    }
+    return null;
   }
 
   /**

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist.">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="2.4&#10;Updated the method for adding a recipe to the cookbook.&#10;Added some javadoc.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Grocery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
@@ -111,7 +111,7 @@
       <workItem from="1732793444402" duration="71000" />
       <workItem from="1732793565837" duration="36000" />
       <workItem from="1733851757628" duration="1683000" />
-      <workItem from="1733917935820" duration="9397000" />
+      <workItem from="1733917935820" duration="12924000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -127,7 +127,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1731585907511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="2.4&#10;Updated the method for adding a recipe to the cookbook.&#10;Added some javadoc.">
+      <option name="closed" value="true" />
+      <created>1733936023743</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1733936023743</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Translated everything to english." />
     <MESSAGE value="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1&#10;Implemented class fridge as the register.&#10;Created arraylist and a method for adding a new grocery to the arraylist." />
+    <MESSAGE value="2.4&#10;Updated the method for adding a recipe to the cookbook.&#10;Added some javadoc." />
+    <option name="LAST_COMMIT_MESSAGE" value="2.4&#10;Updated the method for adding a recipe to the cookbook.&#10;Added some javadoc." />
   </component>
 </project>
