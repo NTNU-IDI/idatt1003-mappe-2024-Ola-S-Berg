@@ -4,7 +4,7 @@ STUDENT ID = 119533
 ## Project description
 
 This project serves as the end assignment for the course IDATT1003. The project revolves around creating an application that helps make consumers a little more aware of their own food waste. The food contains the following information:
-
+```
 Grocery - The grocery, or ingredient, that is used in a recipe.
 Information about the groceries include:
           Name - The name of the grocery - e.g. "Milk".
@@ -12,7 +12,7 @@ Information about the groceries include:
           Price - The price of individual groceries.
           Quantity - The quantity of a grocery.
           Expiration date - The expiration date of the groceries.
-          
+
 Recipe - The recipes that can be made witht the groceries available.
 Information about the recipes include:
           Name - The name of the recipe - e.g. "Waffles".
@@ -21,7 +21,7 @@ Information about the recipes include:
           Time - The time it takes to make each recipe.
           Servings - The amount of servings you can make with the recipe.
           Nutrients - The nutrients that the recipe contains.
-
+```
 The program is limited to use a text-based user interface. 
 The user interface allows the user to limit their own food waste by giving them an overview of the groceries they have in their fridge, their amount and their expiry date.
 Using that information the program can suggest recipes that can be made to limit food waste.
