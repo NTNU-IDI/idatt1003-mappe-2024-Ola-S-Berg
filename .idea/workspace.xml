@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="2.6.0&#10;Added a method to sort recipes by their macronutrients.">
+    <list default="true" id="5ccda394-3039-400d-aa9f-0b47ca4aee03" name="Changes" comment="2.7.0&#10;Added a method to suggest recipes by their associated groceries expiry date.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/CookBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Fridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/Fridge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/idi/bidata/UserUI.java" afterDir="false" />
     </list>
@@ -20,6 +19,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="UML Use Case" />
       </list>
     </option>
   </component>
@@ -40,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Application.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Use Case",
     "JUnit.GroceryTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -55,7 +56,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -111,7 +112,9 @@
       <workItem from="1732793444402" duration="71000" />
       <workItem from="1732793565837" duration="36000" />
       <workItem from="1733851757628" duration="1683000" />
-      <workItem from="1733917935820" duration="23748000" />
+      <workItem from="1733917935820" duration="25309000" />
+      <workItem from="1733965583951" duration="171000" />
+      <workItem from="1733965769013" duration="4496000" />
     </task>
     <task id="LOCAL−00001" summary="Translated everything to english.">
       <option name="closed" value="true" />
@@ -155,7 +158,14 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1733957890501</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="2.7.0&#10;Added a method to suggest recipes by their associated groceries expiry date.">
+      <option name="closed" value="true" />
+      <created>1733963958615</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1733963958615</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +178,11 @@
     <MESSAGE value="2.5.0&#10;Added a method for creating a shopping list based on missing ingredients for a recipe.&#10;Added javadoc." />
     <MESSAGE value="2.5.5&#10;Improved toString for recipes." />
     <MESSAGE value="2.6.0&#10;Added a method to sort recipes by their macronutrients." />
-    <option name="LAST_COMMIT_MESSAGE" value="2.6.0&#10;Added a method to sort recipes by their macronutrients." />
+    <MESSAGE value="2.7.0&#10;Added a method to suggest recipes by their associated groceries expiry date." />
+    <option name="LAST_COMMIT_MESSAGE" value="2.7.0&#10;Added a method to suggest recipes by their associated groceries expiry date." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

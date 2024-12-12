@@ -24,11 +24,15 @@ public class UserUI {
     this.cookBook = new CookBook();
     this.scanner = new Scanner(System.in);
 
-    fridge.registerGrocery(new Grocery("Milk", 1000, "ml", 20, LocalDate.of(2024, 12, 15)));
+    fridge.registerGrocery(new Grocery("Milk", 1000, "ml", 40, LocalDate.of(2024, 12, 15)));
     fridge.registerGrocery(new Grocery("Butter", 500, "g", 50, LocalDate.of(2024, 12, 30)));
-    fridge.registerGrocery(new Grocery("Eggs", 6, "pcs", 40, LocalDate.of(2024, 12, 22)));
+    fridge.registerGrocery(new Grocery("Eggs", 6, "pcs", 20, LocalDate.of(2024, 12, 22)));
     fridge.registerGrocery(new Grocery("Bacon", 5, "pcs", 80, LocalDate.of(2024, 12, 25)));
-    fridge.registerGrocery(new Grocery("Flour", 500, "g", 30, LocalDate.of(2024, 12, 30)));
+    fridge.registerGrocery(new Grocery("Flour", 500, "g", 50, LocalDate.of(2024, 12, 30)));
+    fridge.registerGrocery(new Grocery("Ground beef", 800, "g", 200, LocalDate.of(2024, 12, 25)));
+    fridge.registerGrocery(new Grocery("Cheese", 500, "g", 120, LocalDate.of(2024, 12, 18)));
+    fridge.registerGrocery(new Grocery("Tortillas", 8, "pcs", 40, LocalDate.of(2024, 12, 30)));
+    fridge.registerGrocery(new Grocery("Cabbage", 2, "pcs", 80, LocalDate.of(2024, 12, 14)));
 
     Nutrients pancakeNutrients = new Nutrients(350, 12, 10, 50);
     Recipe pancakes = new Recipe("Pancakes", "Fluffy pancakes", "Mix and fry", 10, 4,
@@ -42,8 +46,24 @@ public class UserUI {
     waffles.addIngredient(new Grocery("Milk", 200, "ml", 20, LocalDate.of(2024, 12, 20)));
     waffles.addIngredient(new Grocery("Flour", 100, "g", 5, LocalDate.of(2024, 12, 23)));
 
+    Nutrients tacoNutrients = new Nutrients(400, 20, 15, 30);
+    Recipe tacos = new Recipe("Tacos", "Dinner tacos", "Prepare ingredients and cook ground beef",
+        15, 2, tacoNutrients);
+    tacos.addIngredient(new Grocery("Ground beef", 400, "g", 100, LocalDate.of(2024, 12, 25)));
+    tacos.addIngredient(new Grocery("Tortillas", 8, "pcs", 40, LocalDate.of(2024, 12, 30)));
+    tacos.addIngredient(new Grocery("Cabbage", 1, "pcs", 40, LocalDate.of(2024, 12, 14)));
+    tacos.addIngredient(new Grocery("Cheese", 100, "g", 30, LocalDate.of(2024, 12, 18)));
+
+    Nutrients baconAndEggsNutrients = new Nutrients(200, 30, 50, 5);
+    Recipe baconAndEggs = new Recipe("Bacon and Eggs", "Breakfast Bacon and Eggs", "Fry in a pan",
+        15, 2, baconAndEggsNutrients);
+    baconAndEggs.addIngredient(new Grocery("Eggs", 6, "pcs", 20, LocalDate.of(2024, 12, 22)));
+    baconAndEggs.addIngredient(new Grocery("Bacon", 10, "pcs", 160, LocalDate.of(2024, 12, 30)));
+
     cookBook.addRecipe(pancakes);
     cookBook.addRecipe(waffles);
+    cookBook.addRecipe(tacos);
+    cookBook.addRecipe(baconAndEggs);
   }
 
   /**
@@ -121,10 +141,11 @@ public class UserUI {
   }
 
   /**
-   * Method for viewing all groceries.
+   * Method for viewing all groceries and finding the total sum of their price.
    */
   private void viewAllGroceries() {
     System.out.println(fridge);
+    fridge.getTotalSumPrice();
   }
 
   /**
@@ -164,17 +185,25 @@ public class UserUI {
   }
 
   /**
-   * Method for printing all the expired groceries in the fridge.
+   * Method for printing all the expired groceries in the fridge. Also gets the total sum of the
+   * price of all expired groceries in the fridge.
    */
   private void viewExpiredGroceries() {
     System.out.println("Enter the date to check expired groceries (yyyy-mm-dd): ");
     LocalDate date = LocalDate.parse(scanner.nextLine());
     List<Grocery> expiredGroceries = fridge.getExpiredGroceries(date);
+
+    double totalExpiredPrice = 0.0;
+    for (Grocery grocery : expiredGroceries) {
+      totalExpiredPrice += grocery.getPrice();
+    }
+
     if (expiredGroceries.isEmpty()) {
       System.out.println("No expired groceries found.");
     } else {
       expiredGroceries.forEach(g -> System.out.println(g));
     }
+    System.out.println("Total price of expired groceries: " + totalExpiredPrice + "kr");
   }
 
   /**

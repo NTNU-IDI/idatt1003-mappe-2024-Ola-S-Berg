@@ -26,6 +26,17 @@ public class Fridge {
   }
 
   /**
+   * Method for getting the total sum of the price of all groceries in the fridge.
+   */
+  public void getTotalSumPrice() {
+    double totalSum = 0.0;
+    for (Grocery grocery : groceries.values()) {
+      totalSum += grocery.getPrice();
+    }
+    System.out.println("Total price of groceries: " + totalSum + "kr");
+  }
+
+  /**
    * Method for adding a new grocery to the fridge.
    *
    * @param grocery The grocery to add.
