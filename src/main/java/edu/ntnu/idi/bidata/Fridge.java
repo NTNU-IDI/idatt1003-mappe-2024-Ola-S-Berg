@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.*;
 
 /**
  * Class "Fridge" functions as the register for the program. It uses a HashMap to register each
@@ -95,6 +96,20 @@ public class Fridge {
     List<Grocery> sortedGroceries = new ArrayList<>(groceries.values());
     sortedGroceries.sort(Comparator.comparing(Grocery::getName));
     return sortedGroceries;
+  }
+
+  /**
+   * Method for getting groceries that are about to expire within a certain number of days.
+   *
+   * @param days The number of days until the expiry date.
+   * @return The groceries that are about to expire within the specified number of days.
+   */
+  public List<Grocery> getGroceriesAboutToExpire(int days) {
+    LocalDate today = LocalDate.now();
+    LocalDate threshold = today.plusDays(days);
+    return groceries.values().stream()
+        .filter(g -> g.getExpiryDate().isBefore(threshold) && g.getExpiryDate().isAfter(today))
+        .collect(Collectors.toList());
   }
 
   /**

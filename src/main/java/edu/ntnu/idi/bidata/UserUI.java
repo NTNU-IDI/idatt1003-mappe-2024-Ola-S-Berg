@@ -1,6 +1,5 @@
 package edu.ntnu.idi.bidata;
 
-import java.sql.SQLOutput;
 import java.util.Map;
 import java.util.Scanner;
 import java.time.LocalDate;
@@ -25,7 +24,7 @@ public class UserUI {
     this.cookBook = new CookBook();
     this.scanner = new Scanner(System.in);
 
-    fridge.registerGrocery(new Grocery("Milk", 1000, "ml", 20, LocalDate.of(2024, 12, 20)));
+    fridge.registerGrocery(new Grocery("Milk", 1000, "ml", 20, LocalDate.of(2024, 12, 15)));
     fridge.registerGrocery(new Grocery("Butter", 500, "g", 50, LocalDate.of(2024, 12, 30)));
     fridge.registerGrocery(new Grocery("Eggs", 6, "pcs", 40, LocalDate.of(2024, 12, 22)));
     fridge.registerGrocery(new Grocery("Bacon", 5, "pcs", 80, LocalDate.of(2024, 12, 25)));
@@ -47,7 +46,6 @@ public class UserUI {
     cookBook.addRecipe(waffles);
   }
 
-
   /**
    * Starts the application by populating the fridge with sample groceries and sample recipes to
    * test the functionality of the classes.
@@ -58,13 +56,13 @@ public class UserUI {
     System.out.println("2. Register a new grocery to the fridge");
     System.out.println("3. Remove a grocery from the fridge");
     System.out.println("4. View expired groceries");
-    System.out.println("\n");
     System.out.println("5. View recipes in the cookbook");
     System.out.println("6. Add a new recipe");
     System.out.println("7. Find recipes possible to make with the groceries in your fridge");
     System.out.println("8. Generate shopping list for a recipe");
     System.out.println("9. Get suggested meals by nutrients");
-    System.out.println("10. Exit");
+    System.out.println("10. Get suggested meals by expiration date");
+    System.out.println("11. Exit");
 
     boolean running = true;
     while (running) {
@@ -89,6 +87,7 @@ public class UserUI {
 
         case 5:
           viewRecipesInCookbook();
+          break;
 
         case 6:
           addRecipe();
@@ -105,7 +104,12 @@ public class UserUI {
         case 9:
           suggestRecipesByMacronutrient();
           break;
+
         case 10:
+          suggestRecipesByExpiryDate();
+          break;
+
+        case 11:
           System.out.println("Exiting the program.");
           running = false;
           break;
@@ -299,6 +303,19 @@ public class UserUI {
     for (Recipe recipe : suggestions) {
       double nutrientValue = recipe.getNutrients().getNutrientValue(focus);
       System.out.println(recipe.getName() + " - " + focus + ": " + nutrientValue + " g");
+    }
+  }
+
+  /**
+   * Method for suggesting recipes using groceries that are about to expire.
+   */
+  private void suggestRecipesByExpiryDate() {
+    System.out.println("Suggested recipes for expiring groceries:");
+    List<Recipe> suggestions = cookBook.getRecipesByExpiryDate(fridge);
+    if (suggestions.isEmpty()) {
+      System.out.println("No recipes found for expiring groceries.");
+    } else {
+      suggestions.forEach(recipe -> System.out.println(recipe.getName()));
     }
   }
 }

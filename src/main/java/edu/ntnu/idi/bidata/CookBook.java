@@ -136,6 +136,20 @@ public class CookBook {
   }
 
   /**
+   * Method for retrieving recipes that can be made using groceries about to expire.
+   *
+   * @param fridge The fridge that contains the groceries.
+   * @return A list of recipes that include ingredients that are about to expire.
+   */
+  public List<Recipe> getRecipesByExpiryDate(Fridge fridge) {
+    List<Grocery> aboutToExpire = fridge.getGroceriesAboutToExpire(3);
+    return recipes.stream().filter(recipe -> recipe.getIngredients().keySet().stream().anyMatch(
+            ingredient -> aboutToExpire.stream()
+                .anyMatch(grocery -> grocery.getName().equalsIgnoreCase(ingredient))))
+        .collect(Collectors.toList());
+  }
+
+  /**
    * Returns a string representation of all recipes in the cookbook.
    *
    * @return A string listing all recipes by name.
