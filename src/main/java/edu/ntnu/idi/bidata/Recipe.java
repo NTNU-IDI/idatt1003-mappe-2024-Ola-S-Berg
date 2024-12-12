@@ -98,10 +98,10 @@ public class Recipe {
         "\nTime: " + time + " minutes" +
         "\nServings: " + servings +
         "\nNutrients: " +
-        "\n - Calories: " + nutrients.getCalories() +
-        "\n - Protein: " + nutrients.getProtein() + " g" +
-        "\n - Fat: " + nutrients.getFat() + " g" +
-        "\n - Carbs: " + nutrients.getCarbs() + " g" +
+        "\n - Calories: " + nutrients.calories() +
+        "\n - Protein: " + nutrients.protein() + " g" +
+        "\n - Fat: " + nutrients.fat() + " g" +
+        "\n - Carbs: " + nutrients.carbs() + " g" +
         "\nIngredients: " + ingredients.values() + "\n";
   }
 }

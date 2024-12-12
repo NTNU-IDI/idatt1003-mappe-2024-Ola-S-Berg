@@ -16,10 +16,10 @@ class NutrientsTest {
   public void testInitializationPositive() {
     Nutrients nutrients = new Nutrients(250, 10, 5, 35);
 
-    assertEquals(250, nutrients.getCalories());
-    assertEquals(10, nutrients.getProtein());
-    assertEquals(5, nutrients.getFat());
-    assertEquals(35, nutrients.getCarbs());
+    assertEquals(250, nutrients.calories());
+    assertEquals(10, nutrients.protein());
+    assertEquals(5, nutrients.fat());
+    assertEquals(35, nutrients.carbs());
   }
 
   /**

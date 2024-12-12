@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.*;
+import java.util.stream.Collectors;
 
 /**
  * Class "Fridge" functions as the register for the program. It uses a HashMap to register each

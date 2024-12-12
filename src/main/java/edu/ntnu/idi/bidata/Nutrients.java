@@ -4,12 +4,7 @@ package edu.ntnu.idi.bidata;
  * Class "Nutrients" has responsibility for handling information about the nutrients of the
  * recipes.
  */
-public class Nutrients {
-
-  private final double calories;
-  private final double protein;
-  private final double fat;
-  private final double carbs;
+public record Nutrients(double calories, double protein, double fat, double carbs) {
 
   /**
    * Constructor for initializing nutrients.
@@ -19,33 +14,18 @@ public class Nutrients {
    * @param fat      The amount of fat in the recipe.
    * @param carbs    The amount of carbohydrates in the recipe.
    */
-  public Nutrients(double calories, double protein, double fat, double carbs) {
+  public Nutrients {
     if (calories < 0 || protein < 0 || fat < 0 || carbs < 0) {
       throw new IllegalArgumentException("Nutrient values cannot be negative");
     }
-    this.calories = calories;
-    this.protein = protein;
-    this.fat = fat;
-    this.carbs = carbs;
   }
 
   /**
    * Get-methods to get information about the nutrients.
    */
-  public double getCalories() {
+  @Override
+  public double calories() {
     return calories;
-  }
-
-  public double getProtein() {
-    return protein;
-  }
-
-  public double getFat() {
-    return fat;
-  }
-
-  public double getCarbs() {
-    return carbs;
   }
 
   /**
@@ -56,16 +36,12 @@ public class Nutrients {
    * @return The value of the macronutrient for the recipe.
    */
   public double getNutrientValue(String focus) {
-    switch (focus.toLowerCase()) {
-      case "carbs":
-        return this.getCarbs();
-      case "protein":
-        return this.getProtein();
-      case "fat":
-        return this.getFat();
-      default:
-        throw new IllegalArgumentException("Invalid macronutrient focus " + focus);
-    }
+    return switch (focus.toLowerCase()) {
+      case "carbs" -> this.carbs();
+      case "protein" -> this.protein();
+      case "fat" -> this.fat();
+      default -> throw new IllegalArgumentException("Invalid macronutrient focus " + focus);
+    };
   }
 
   /**

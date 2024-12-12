@@ -201,7 +201,7 @@ public class UserUI {
     if (expiredGroceries.isEmpty()) {
       System.out.println("No expired groceries found.");
     } else {
-      expiredGroceries.forEach(g -> System.out.println(g));
+      expiredGroceries.forEach(System.out::println);
     }
     System.out.println("Total price of expired groceries: " + totalExpiredPrice + "kr");
   }
@@ -272,7 +272,7 @@ public class UserUI {
   private void possibleRecipes() {
     System.out.println("Finding recipes based on your fridge...");
     List<Recipe> recipes = cookBook.findAllPossibleRecipes(fridge);
-    recipes.forEach(recipe -> System.out.println(recipe));
+    recipes.forEach(System.out::println);
   }
 
   /**
@@ -310,7 +310,7 @@ public class UserUI {
     System.out.println("Enter your choice: ");
 
     int choice = Integer.parseInt(scanner.nextLine().trim());
-    String focus = "";
+    String focus;
 
     switch (choice) {
       case 1:
