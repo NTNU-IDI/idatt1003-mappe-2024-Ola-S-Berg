@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
 
 /**
  * Class "Fridge" functions as the register for the program. It uses a HashMap to register each
- * grocery name, and assigns information to the groceries using an ArrayList. Contains methods for:
- * adding a grocery, removing a grocery, finding the quantity of a grocery, returning groceries that
- * have not expired and returning all groceries as a sorted list.
+ * grocery name. Contains methods for: adding a grocery, removing a grocery, finding the quantity of
+ * a grocery, returning groceries that have not expired and returning all groceries as a sorted
+ * list.
  */
 public class Fridge {
 
